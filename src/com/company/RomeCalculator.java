@@ -8,16 +8,16 @@ public class RomeCalculator {
         int x2 = Rome.getArab(a_b[1].trim());      //Второе значение
 
         if (Parsing.oper.equals("+")) {             //Если переменная Parsing.oper = "+",
-            Solution.result = Sum.summa(x1, x2);    //то вызываем метод summa
+            Solution.result = Operations.summa(x1, x2);    //то вызываем метод summa
         }
         if (Parsing.oper.equals("-")) {
-            Solution.result = Sub.sub(x1, x2);
+            Solution.result = Operations.sub(x1, x2);
         }
         if (Parsing.oper.equals("*")) {
-            Solution.result = Mult.mult(x1, x2);
+            Solution.result = Operations.mult(x1, x2);
         }
         if (Parsing.oper.equals("/")) {
-            Solution.result = Div.div(x1, x2);
+            Solution.result = Operations.div(x1, x2);
         }
 
         return Solution.result;

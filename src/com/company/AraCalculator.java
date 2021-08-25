@@ -9,16 +9,16 @@ public class AraCalculator {
            int b = Integer.parseInt(a_b[1].trim());
 
         if (Parsing.oper.equals("+")) {
-            Solution.result = Sum.summa(a, b);
+            Solution.result = Operations.summa(a, b);
         }
         if (Parsing.oper.equals("-")) {
-            Solution.result = Sub.sub(a, b);
+            Solution.result = Operations.sub(a, b);
         }
         if (Parsing.oper.equals("*")) {
-            Solution.result = Mult.mult(a, b);
+            Solution.result = Operations.mult(a, b);
         }
         if (Parsing.oper.equals("/")) {
-            Solution.result = Div.div(a, b);
+            Solution.result = Operations.div(a, b);
         }
         return Solution.result;
     }
