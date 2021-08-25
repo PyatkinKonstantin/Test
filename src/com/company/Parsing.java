@@ -6,20 +6,20 @@ public class Parsing {
     public static String[] parsing(String str) {
         char[] op = str.toCharArray();
         String[] ab = new String[2];
-        for (int x = 0; x < op.length; x++) {
-            if (op[x] == '+') {                   //Находим название операции
+        for (char c : op) {
+            if (c == '+') {                   //Находим название операции
                 oper = "+";                       //Присваиваем переменную операции
                 ab = str.split("\\+");      //Режем строку по знаку +
             }
-            if (op[x] == '-') {
+            if (c == '-') {
                 oper = "-";
                 ab = str.split("-");
             }
-            if (op[x] == '/') {
+            if (c == '/') {
                 oper = "/";
                 ab = str.split("/");
             }
-            if (op[x] == '*') {
+            if (c == '*') {
                 oper = "*";
                 ab = str.split("\\*");
             }
