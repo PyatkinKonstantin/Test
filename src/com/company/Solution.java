@@ -20,7 +20,7 @@ public class Solution {
             try {
                 if (Integer.parseInt(a_b[0].trim())>0&&Integer.parseInt(a_b[0].trim())<11){
                     AraCalculator.araCalculator();
-                    System.out.println(result);
+                    System.out.println(result); //test
                 }
             } catch (NumberFormatException e) {
 
